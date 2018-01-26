@@ -1,13 +1,16 @@
 #firstSection {
     background-color: Blue;
+    padding: 5px;
 }
 
 #secondSection {
     background-color: white;
+    padding: 5px;
 }
 
 #thirdSection {
     background-color: red;
+    padding: 5px;
 }
 
 img {
