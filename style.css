@@ -1,11 +1,11 @@
-section#1 {
-    background-color: skyblue;
+#firstSection {
+    background-color: Blue;
 }
 
-section#2 {
-    background-color: aqua;
+#secondSection {
+    background-color: white;
 }
 
-section#3 {
+#thirdSection {
     background-color: red;
 }
