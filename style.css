@@ -21,3 +21,8 @@
 img {
     max-width: 100%;
 }
+
+header h1 {
+    size: 30px;
+    text-align: center;
+}
