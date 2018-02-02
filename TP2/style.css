@@ -1,0 +1,112 @@
+/* Définition de la taille d'un rem à 16px */
+
+p {
+    color: white;
+}
+
+html {
+    background-image: url('img/bg.jpg');
+    background-size: contain;
+    background-size: cover;
+}
+
+:root {
+    font-size: 16px;
+}
+
+#firstSection {
+    padding: 5px;
+}
+
+#secondSection {
+    padding: 5px;
+}
+
+#thirdSection {
+    padding: 5px;
+}
+
+#formulaire {
+    padding: 5px;
+}
+
+img {
+    max-width: 100%;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 8vw;
+}
+
+h1 {
+    font-size: 1.5625rem;
+    color: white;
+}
+
+footer #image {
+    background-image: url('img/logo-iut.jpg');
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-position: center;
+    background-size: 300px auto;
+    height: 110px;
+}
+
+table {
+    border: 1px solid white;
+}
+
+th {
+    background-color: grey;
+    border: 1px solid white;
+    color: white;
+}
+
+td {
+    border: 1px solid white;
+    color: white;
+}
+
+
+/* Média quéries */
+
+
+/* Smartphones */
+
+@media screen and (max-width: 480px) {
+    td,
+    th {
+        display: block;
+    }
+}
+
+
+/* De Smartphones à tablettes */
+
+@media screen and (max-width: 767px) {
+    td,
+    th {
+        display: block;
+    }
+}
+
+
+/* Tablette à petit écran */
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+    td,
+    th {
+        display: block;
+    }
+}
+
+
+/* Ecran larges */
+
+@media screen and (min-width: 1200px) {}
+
+
+/* Ecran Retina */
+
+@media screen and (-webkit-max-device-pixel-ratio: 2) {}
