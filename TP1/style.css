@@ -1,3 +1,14 @@
+p {
+    font-size: 1rem;
+}
+
+
+/* Définition de la taille d'un rem à 16px */
+
+:root {
+    font-size: 16px;
+}
+
 #firstSection {
     background-color: Blue;
     padding: 5px;
@@ -23,8 +34,11 @@ img {
 }
 
 header h1 {
-    size: 30px;
     text-align: center;
+}
+
+h1 {
+    font-size: 1.5625rem;
 }
 
 footer #image {
@@ -56,3 +70,10 @@ footer #image {
 
 
 /* Ecran larges */
+
+@media screen and (min-width: 1200px) {}
+
+
+/* Ecran Retina */
+
+@media screen and (-webkit-max-device-pixel-ratio: 2) {}
