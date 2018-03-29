@@ -1,0 +1,404 @@
+/*Code de base pour le pc */
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    font-size: 16px;
+}
+
+#burger,
+#phone {
+    display: none;
+}
+
+header {
+    height: auto;
+    background-color: #0C0B0A;
+    /*background-image: linear-gradient(black, #222f3e);*/
+    width: 100%;
+    border-radius: 1%;
+    display: inline-block;
+}
+
+#logo {
+    margin-left: 1%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    max-width: 12%;
+    height: auto;
+}
+
+#menu ul {
+    float: right;
+    font-size: 22px;
+    padding-right: 1%;
+}
+
+#menu li {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 5px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+#menu li.menu:hover a {
+    color: black;
+}
+
+#menu li.menu:hover {
+    background-color: grey;
+}
+
+.okSearch {
+    background-image: url('img/loupe.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#banniere img {
+    width: 100%;
+    margin-top: -1%;
+}
+
+#textePresentation {
+    background-size: 100%;
+    background-color: #0E0F0F;
+    padding-bottom: 5px;
+}
+
+#textePresentation p {
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+}
+
+.present {
+    max-width: 49%;
+    display: inline-block;
+}
+
+.present h2 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.imgPres {
+    max-width: 49%;
+    display: inline-block;
+    text-align: right;
+}
+
+.imgPres img {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 3%;
+}
+
+#pres1 {
+    margin-top: 3%;
+}
+
+#pres2 {
+    margin-top: 3%;
+}
+
+.parties {
+    color: lightgray;
+    text-align: center;
+    margin: 0px;
+    margin-top: -5px;
+    font-family: 'New Century Schoolbook', 'TeX Gyre Schola', serif
+}
+
+#quatreBlocs {
+    background-color: #2C2F2F;
+    margin: 0px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.blocsCentre {
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: inline-block;
+    max-width: 20%;
+}
+
+.blocsCentre a {
+    text-decoration: none;
+    color: black;
+}
+
+.blocsCentre a:hover {
+    color: greenyellow;
+}
+
+.blocsCentre img {
+    margin-top: 3%;
+}
+
+.blocsCentre p {
+    text-align: left;
+    margin-left: 3%;
+    font-weight: bold;
+    color: white;
+}
+
+#mapAndForm {
+    margin: 0px;
+    padding: 0px;
+    background-color: #606060;
+}
+
+#carte {
+    width: 45%;
+    max-width: 49%;
+    padding: 1%;
+    border-right: 2px solid white;
+    height: 450px;
+}
+
+#form {
+    margin-top: 2%;
+    width: 49%;
+    margin: auto;
+    text-align: center;
+}
+
+.formBase {
+    margin: 3%;
+    margin-right: 0;
+    width: 45%;
+    max-width: 45%;
+}
+
+.grandForm {
+    margin: 3%;
+    margin-right: 0;
+    width: 94%;
+}
+
+.blocBas {
+    max-width: 49%;
+    display: inline-block;
+}
+
+#form label {
+    color: white;
+}
+
+textarea {
+    margin: 2%;
+    margin-right: 0;
+    width: 93%;
+    height: 200px;
+}
+
+footer {
+    background-color: black;
+    height: 50px;
+}
+
+
+/*MEDIA QUERIES POUR LES TABLETTES*/
+
+@media screen and (max-width: 1024px) {
+    #menu ul {
+        display: block;
+        margin-right: 18%;
+    }
+    #menu li a {
+        font-size: 25px;
+    }
+    #menu li #okSearch {
+        width: 20px;
+    }
+    #logo {
+        max-width: 100%;
+        margin-left: 10%;
+        display: block;
+        width: 80%;
+        height: auto;
+    }
+    #textePresentation {
+        width: 100%;
+    }
+    #textePresentation h1 {
+        font-size: 45px;
+    }
+    #pres1 {
+        max-width: 100%;
+    }
+    #pres1 h2 {
+        font-size: 40px;
+    }
+    #pres1 p {
+        font-size: 30px;
+    }
+    #imgPres1 {
+        max-width: 100%;
+        margin-left: 4%;
+        margin-bottom: 3%;
+    }
+    #imgPres1 img {
+        margin-left: 10%;
+        display: block;
+        width: 80%;
+    }
+    .present {
+        display: block;
+    }
+    .blocsCentre {
+        max-width: 50%;
+        width: 48%;
+        vertical-align: top;
+    }
+    .blocsCentre h2 {
+        font-size: 30px;
+    }
+    .blocsCentre p {
+        font-size: 25px;
+    }
+    #burger,
+    #phone {
+        display: none;
+    }
+    #mapAndForm #carte {
+        height: 375px;
+    }
+}
+
+
+/*MEDIA QUERIES POUR LES SMARTPHONES*/
+
+@media screen and (max-width: 450px) {
+    /* #menu ul {
+        display: block;
+        margin-right: 18%;
+    }
+    #menu li a {
+        font-size: 25px;
+    }
+    #menu li #okSearch {
+        width: 20px;
+    } */
+    #menu {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #logo {
+        max-width: 55%;
+        margin-left: 8%;
+        display: inline-block;
+        width: 52%;
+        height: auto;
+        vertical-align: middle;
+    }
+    #textePresentation {
+        width: 100%;
+    }
+    #textePresentation h1 {
+        font-size: 45px;
+    }
+    #pres1 {
+        max-width: 100%;
+    }
+    #pres1 h2 {
+        font-size: 40px;
+    }
+    #pres1 p {
+        font-size: 30px;
+    }
+    #imgPres1 {
+        max-width: 100%;
+        margin-left: 4%;
+        margin-bottom: 3%;
+    }
+    #imgPres1 img {
+        margin-left: 10%;
+        display: block;
+        width: 80%;
+    }
+    .present {
+        display: block;
+    }
+    .blocsCentre {
+        max-width: 100%;
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+        vertical-align: top;
+    }
+    .blocsCentre h2 {
+        font-size: 30px;
+    }
+    .blocsCentre p {
+        font-size: 25px;
+    }
+    .blocBas {
+        max-width: 100%;
+    }
+    #mapAndForm #carte {
+        margin: 0%;
+        padding: 0%;
+        max-width: 100%;
+        width: 99%;
+        height: auto;
+        border: non;
+    }
+    #mapAndForm #form {
+        width: 100%;
+    }
+    .formBase {
+        max-width: 100%;
+    }
+    #mapAndForm #form input {
+        display: block;
+        width: 94%;
+        text-align: center;
+    }
+    #photo {
+        margin-left: 20%;
+        max-width: 80%;
+    }
+    #burger {
+        margin: 0%;
+        padding: 0%;
+        margin-left: 5%;
+        display: inline-block;
+        width: 10%;
+        vertical-align: middle;
+    }
+    #phone {
+        margin: 0%;
+        padding: 0%;
+        margin-left: 8%;
+        display: inline-block;
+        width: 10%;
+        vertical-align: middle;
+    }
+    #menu ul {
+        display: none;
+    }
+    #header.vueMenu {
+        display: block;
+    }
+    #header.vueMenu li {
+        display: block;
+        border-left: none;
+    }
+    #header.vueMenu li a {
+        font-size: 20px;
+    }
+}
